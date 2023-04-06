@@ -1,8 +1,8 @@
 # Belajar Javascript DOM
 
 ---------------------------------
-Nama : Laila Nur Fardah
-Kelompok : FE-34
+#### Nama : Laila Nur Fardah
+#### Kelompok : FE-34
 
 ## Challenge Class
 
