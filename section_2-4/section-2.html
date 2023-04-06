@@ -25,6 +25,19 @@
         const hai = document.getElementById('hai');
         hai.style.fontSize = '40px';
 
+        //getElementsByName()
+        let button = document.getElementById('simpan');
+        let hasil = document.getElementById('hasil');
+        button.addEventListener('click', () => {
+            let rates = document.getElementsByName('jenisGender');
+            rates.forEach((jenisGender) => {
+                if (jenisGender.checked) {
+                    hasil.innerText = `Anda berjenis kelamin ${jenisGender.value}`;
+                }
+            });
+        });
+
+        //
     </script>
 </body>
 </html>
