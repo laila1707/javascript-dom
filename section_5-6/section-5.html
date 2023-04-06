@@ -7,6 +7,25 @@
     <title>Section 5</title>
 </head>
 <body>
-    
+    <p>klik button di bawah untuk menuju ke repository javascript DOM github Laila</p>
+    <button>
+        <a id="button">Repository JavaScript</a>
+    </button>
+    <button>
+        <a id="button2" href="https://github.com/laila1707/javascript-dom">Repository Laila tentang JavaScript DOM</a>
+    </button>
+    <script>
+        //setAttribute() 
+        let buttonJSDOM = document.querySelector('#button');
+        if (buttonJSDOM) {
+            buttonJSDOM.setAttribute('href', 'https://github.com/laila1707/javascript-dom');
+        }
+
+        //removeAttribute()
+        let button2 = document.querySelector('#button2');
+        if (button2){
+            button2.removeAttribute('href');
+        }
+    </script>
 </body>
 </html>

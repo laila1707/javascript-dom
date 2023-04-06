@@ -5,8 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Section 6</title>
+    <style type="text/css">
+        .cek {
+            color: green;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1 id="cek" class="cek"> Contoh getComputedStyle()</h1>
+    <script>
+        //getComputedStyle
+        let cek = document.querySelector('.cek');
+        let style = getComputedStyle(cek);
+
+        console.log('color:', style.color);
+
+        //className property
+        let p = document.querySelector('#cek');
+        console.log(p.className);
+    </script>
 </body>
 </html>
