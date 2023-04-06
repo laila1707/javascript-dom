@@ -6,6 +6,29 @@
     <title>Section 3</title>
 </head>
 <body>
-    <h1>menu</h1>
+    <div id="coba">
+        <h1>Coba-coba</h1>
+        <h1 class="section-3">Section 3</h1>
+    </div>
+    <div>
+        <h2>1. Get the parent element</h2>
+        <h2 class="se3">2. Get child elements</h2>
+        <h2>3. Get siblings of an element</h2>
+    </div>
+    <script>
+        //Get the parent element
+        let parentElemen = document.querySelector('.section-3')
+        parentElemen.style.color = 'yellow';
+
+        //Get child elements
+        let getChild = parentElemen.getChild;
+        let edit = document.getElementById('coba');
+        edit.style.color = 'green';
+
+        //Get siblings of an element
+        let pilih = document.querySelector('.se3');
+        let siblings = pilih.nextElementSibling;
+        siblings.style.color = 'orange';
+    </script>
 </body>
 </html>
