@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section 8_2</title>
+</head>
+<body>
+    <p>Pilih makanan favoritmu:</p>
+    <label for="c1"> <input type="checkbox" name="food" value="sate" id="c1">Sate</label>
+    <label for="c2"><input type="checkbox" name="food" value="bakso" id="c2">Bakso</label>
+    <label for="c3"><input type="checkbox" name="food" value="mie" id="c3">Mie</label>
+    <p>
+        <button id="btn">Pilih makanan mu</button>
+    </p>
+
+    <script>
+        const btn = document.querySelector('#btn');
+        btn.addEventListener('click', (event) => {
+            let checkboxes = document.querySelectorAll('input[name="food"]:checked');
+            let values = [];
+            checkboxes.forEach((checkbox) => {
+                values.push(checkbox.value);
+            });
+            alert(values);
+        });    
+    </script>
+</body>
+</html>
