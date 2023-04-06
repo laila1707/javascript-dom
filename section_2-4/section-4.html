@@ -7,6 +7,32 @@
     <title>Section 4</title>
 </head>
 <body>
+    <div id="appendChild">
 
+    </div>
+
+    <script>
+        //createElement()
+        let adddiv = document.createElement('div');
+        adddiv.id = 'coba';
+        adddiv.innerHTML = '<h1>Ini createElement()</h1>';
+        document.body.appendChild(adddiv);
+
+        //appendChild()
+        function createh3(isi_h3){
+            let h3 = document.createElement('h3');
+            h3.textContent = isi_h3;
+            return h3;
+        }
+        const ini_h3 = document.querySelector('#appendChild');
+        ini_h3.appendChild(createh3('Ini'));
+        ini_h3.appendChild(createh3('hasil dari'));
+        ini_h3.appendChild(createh3('appendChild()'));
+
+        //innerHTML
+        let inner = document.createElement('ul')
+        inner.innerHTML = '<li>ini contoh</li><li>innerHTML</li>';
+        document.body.appendChild(inner);
+    </script>
 </body>
 </html>
