@@ -8,6 +8,38 @@
 </head>
 
 <body>
+    <p>Pilih Jenis Kelamin Anda:</p>
+    <div>
+        <input type="radio" name="gender" value="Perempuan" id="p">
+        <label for="pe">Perempuan</label>
+    </div>
+    <div>
+        <input type="radio" name="gender" value="Laki-laki" id="l">
+        <label for="laki">Laki-laki</label>
+    </div>
 
+    <p>
+        <button id="btn">Tunjukan hasil</button>
+    </p>
+
+    <p id="output"></p>
+
+    <script>
+        const btn = document.querySelector('#btn');        
+        const radioButtons = document.querySelectorAll('input[name="gender"]');
+        btn.addEventListener("click", () => {
+            let selectedGender;
+            for (const radioButton of radioButtons) {
+                if (radioButton.checked) {
+                    selectedGender = radioButton.value;
+                    break;
+                }
+            }
+            // show the output:
+            output.innerText = selectedGender ? `Anda berjenis kelamin ${selectedGender}` : `Anda belum memilih jenis kelamin`;
+        });
+    </script>
+</body>
+</html>
 </body>
 </html>
