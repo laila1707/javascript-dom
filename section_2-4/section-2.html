@@ -37,7 +37,12 @@
             });
         });
 
-        //
+        //getElementByTagName
+        let btn = document.getElementById('check');
+        btn.addEventListener('click', () => {
+            let coba = document.getElementsByTagName('h2');
+            alert(`Berapa jumlah tag h2? ${coba.length}`);
+        });
     </script>
 </body>
 </html>
