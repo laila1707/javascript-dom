@@ -20,7 +20,7 @@
 ### Script js
 ```js
     <script>
-        
+        //getElementById()
         const hai = document.getElementById('hai');
         hai.style.fontSize = '40px';
 
